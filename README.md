@@ -1,4 +1,4 @@
-# pyasic:
+# pyasic: 
 *A simplified and standardized interface for Bitcoin ASICs.*
 
 An asynchronous Python library for managing and monitoring Bitcoin mining hardware.
@@ -15,7 +15,7 @@ An asynchronous Python library for managing and monitoring Bitcoin mining hardwa
 [![License - Apache 2.0](https://img.shields.io/github/license/__USERNAME__/__REPONAME__)](https://github.com/__USERNAME__/__REPONAME__/blob/master/LICENSE.txt)
 
 ---
-## Intro
+## Intro:
 
 Welcome to `pyasic`!  `pyasic` uses an asynchronous method of communicating with ASIC miners on your network, which makes it super fast.
 
