@@ -1,0 +1,154 @@
+# ------------------------------------------------------------------------------
+#  Copyright 2022 Upstream Data Inc                                            -
+#                                                                              -
+#  Licensed under the Apache License, Version 2.0 (the "License");             -
+#  you may not use this file except in compliance with the License.            -
+#  You may obtain a copy of the License at                                     -
+#                                                                              -
+#      http://www.apache.org/licenses/LICENSE-2.0                              -
+#                                                                              -
+#  Unless required by applicable law or agreed to in writing, software         -
+#  distributed under the License is distributed on an "AS IS" BASIS,           -
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.    -
+#  See the License for the specific language governing permissions and         -
+#  limitations under the License.                                              -
+# ------------------------------------------------------------------------------
+from __future__ import annotations
+
+from enum import Enum
+from typing import Any
+
+from pydantic import BaseModel
+
+
+class MinerConfigOption(Enum):
+    @classmethod
+    def from_dict(cls, dict_conf: dict | None):
+        return cls.default()
+
+    def as_am_modern(self) -> dict:
+        return self.value.as_am_modern()
+
+    def as_hiveon_modern(self) -> dict:
+        return self.value.as_hiveon_modern()
+
+    def as_am_old(self) -> dict:
+        return self.value.as_am_old()
+
+    def as_wm(self) -> dict:
+        return self.value.as_wm()
+
+    def as_inno(self) -> dict:
+        return self.value.as_inno()
+
+    def as_goldshell(self) -> dict:
+        return self.value.as_goldshell()
+
+    def as_avalon(self) -> dict:
+        return self.value.as_avalon()
+
+    def as_bosminer(self) -> dict:
+        return self.value.as_bosminer()
+
+    def as_boser(self) -> dict:
+        return self.value.as_boser
+
+    def as_epic(self) -> dict:
+        return self.value.as_epic()
+
+    def as_vnish(self) -> dict:
+        return self.value.as_vnish()
+
+    def as_auradine(self) -> dict:
+        return self.value.as_auradine()
+
+    def as_mara(self) -> dict:
+        return self.value.as_mara()
+
+    def as_espminer(self) -> dict:
+        return self.value.as_espminer()
+
+    def as_luxos(self) -> dict:
+        return self.value.as_luxos()
+
+    def as_elphapex(self) -> dict:
+        return self.value.as_elphapex()
+
+    def __call__(self, *args, **kwargs):
+        return self.value(*args, **kwargs)
+
+    @classmethod
+    def default(cls):
+        pass
+
+    def __getitem__(self, item):
+        try:
+            return getattr(self, item)
+        except AttributeError:
+            raise KeyError
+
+
+class MinerConfigValue(BaseModel):
+    @classmethod
+    def from_dict(cls, dict_conf: dict):
+        return cls()
+
+    def as_dict(self) -> dict:
+        return self.model_dump()
+
+    def as_am_modern(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_hiveon_modern(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_am_old(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_wm(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_btminer_v3(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_inno(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_goldshell(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_avalon(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_bosminer(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_boser(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_epic(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_vnish(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_auradine(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_mara(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_espminer(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_luxos(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def as_elphapex(self, *args: Any, **kwargs: Any) -> Any:
+        return {}
+
+    def __getitem__(self, item):
+        try:
+            return getattr(self, item)
+        except AttributeError:
+            raise KeyError
