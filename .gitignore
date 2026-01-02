@@ -1,0 +1,10 @@
+venv/
+build/
+dist/
+__pycache__/
+pyvenv.cfg
+.env/
+bin/
+lib/
+.idea/
+.vs/
