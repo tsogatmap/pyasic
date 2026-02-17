@@ -24,19 +24,19 @@ Welcome to `pyasic`!  `pyasic` uses an asynchronous method of communicating with
 ---
 
 ## **Installation Info:** 
-The guide below is for Windows and Linux; macOS users have a [DMG file](../../releases).
+For Windows and Linux users, use the guide below. macOS users have a [DMG file](../../releases) option.
 
 
 
 
 
-Make sure Git & Python are configured on Windows.
+Validate your tools: Git and Python.
 
-Link for Git: https://git-scm.com/install/windows
+https://git-scm.com/install/windows
 
-Link for Python: https://www.python.org/ftp/python/3.13.12/python-3.13.12-amd64.exe
+https://www.python.org/ftp/python/3.13.12/python-3.13.12-amd64.exe
 
-Proceed to open Command Prompt as administrator.
+Open an administrative Command Prompt.
 
 
 
